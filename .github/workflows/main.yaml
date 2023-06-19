@@ -1,7 +1,7 @@
     name: "Audit log recording"
     on:
       issues:
-          types: [opened]
+        types: [opened, edited]
     jobs:
         audit-log-recording:
             runs-on: ubuntu-latest
