@@ -1,0 +1,10 @@
+    name: "Audit log recording"
+    on:
+      issues:
+          types: [opened]
+    jobs:
+        audit-log-recording:
+            runs-on: ubuntu-latest
+            steps:
+            - name: Echo issue name
+              run: echo ${{ github.event.issue.title }}
